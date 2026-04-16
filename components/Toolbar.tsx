@@ -232,16 +232,18 @@ export function Toolbar({
           </Button>
 
           <AlertDialog>
-            <AlertDialogTrigger>
-              <Button
-                variant="ghost"
-                size="icon"
-                title="Reset graph"
-                className="w-8 h-8 rounded-lg text-slate-600 hover:text-red-400 hover:bg-red-900/20"
-              >
-                <RotateCcw className="w-4 h-4" />
-              </Button>
-            </AlertDialogTrigger>
+            <AlertDialogTrigger
+              render={
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  title="Reset graph"
+                  className="w-8 h-8 rounded-lg text-slate-600 hover:text-red-400 hover:bg-red-900/20"
+                >
+                  <RotateCcw className="w-4 h-4" />
+                </Button>
+              }
+            />
             <AlertDialogContent className="bg-mm-surface border-[#30363d] text-slate-100">
               <AlertDialogHeader>
                 <AlertDialogTitle>Reset to defaults?</AlertDialogTitle>

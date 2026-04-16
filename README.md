@@ -33,7 +33,7 @@ A browser-based interactive graph tool for mapping concepts, ideas, and the rela
 - Tailwind CSS, Framer Motion
 - Zustand (state + localStorage persistence)
 - Cytoscape.js + Dagre layout plugin
-- Shadcn UI / Radix primitives
+- Shadcn UI / Base UI primitives
 
 ## Setup
 
