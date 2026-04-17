@@ -69,7 +69,7 @@ const actions = [
 export function HelpModal({ isOpen, onClose }: Props) {
   return (
     <Dialog open={isOpen} onOpenChange={(o) => { if (!o) onClose(); }}>
-      <DialogContent className="sm:max-w-[440px] bg-[#161b22] border-[#30363d] text-slate-100 shadow-2xl">
+      <DialogContent className="sm:max-w-[440px] w-[calc(100%-2rem)] bg-[#161b22] border-[#30363d] text-slate-100 shadow-2xl">
         <DialogHeader>
           <DialogTitle className="text-base font-semibold text-slate-200 flex items-center gap-2">
             <HelpCircle className="w-4 h-4 text-[#a78bfa]" />
