@@ -58,7 +58,7 @@ export function AnalyticsModal({ isOpen, onClose }: Props) {
             { label: "Avg Degree", value: avgDeg, icon: <BarChart2 className="w-4 h-4 text-[#a78bfa]" />, color: "border-[#a78bfa]/20 bg-[#a78bfa]/5" },
             { label: "Isolated", value: isolated.length, icon: <AlertCircle className="w-4 h-4 text-[#f59e0b]" />, color: "border-[#f59e0b]/20 bg-[#f59e0b]/5" },
           ].map((s) => (
-            <div key={s.label} className={`flex items-center gap-3 p-3.5 rounded-xl border ${s.color}`}>
+            <div key={s.label} className={`flex items-center gap-3 p-2.5 sm:p-3.5 rounded-xl border ${s.color}`}>
               {s.icon}
               <div>
                 <p className="text-xl font-bold text-white font-mono">{s.value}</p>
