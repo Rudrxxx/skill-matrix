@@ -282,7 +282,6 @@ export function GraphCanvas({ layoutDirection, flowMode }: Props) {
             cy.scratch("_listenersAttached", true);
           }
         }}
-        wheelSensitivity={0.1}
         maxZoom={3}
         minZoom={0.15}
       />
