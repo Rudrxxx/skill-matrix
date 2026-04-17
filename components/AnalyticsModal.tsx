@@ -101,7 +101,7 @@ export function AnalyticsModal({ isOpen, onClose }: Props) {
           <p className="text-[10px] text-slate-500 uppercase tracking-widest font-semibold mb-2 px-0.5">
             All Nodes
           </p>
-          <div className="flex flex-col gap-1.5 max-h-[220px] overflow-y-auto">
+          <div className="flex flex-col gap-1.5 max-h-[30vh] sm:max-h-[220px] overflow-y-auto">
             {[...nodes]
               .sort((a, b) => (deg[b.id] || 0) - (deg[a.id] || 0))
               .map((n) => {
